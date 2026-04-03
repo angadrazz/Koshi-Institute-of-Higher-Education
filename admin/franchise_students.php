@@ -6,12 +6,14 @@ if(!isset($_SESSION['admin'])){
   header("Location: login.php");
   exit();
 }
+
+$fid = $_GET['fid'] ?? "";
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Franchise Requests</title>
+  <title>Franchise Students</title>
   <style>
     body{font-family:Arial;background:#f2f7ff;padding:20px;}
     h2{color:#0b5cff;}
@@ -23,39 +25,28 @@ if(!isset($_SESSION['admin'])){
 </head>
 <body>
 
-<h2>Franchise Requests</h2>
-<a class="back" href="dashboard.php">Back to Dashboard</a>
-<a style='padding:6px 10px;background:#0b5cff;color:white;text-decoration:none;border-radius:8px;font-weight:bold;'
-href='franchise_students.php?fid=".$row['franchise_id']."'>Students</a>
-
+<h2>Students Registered By Franchise: <?php echo $fid; ?></h2>
+<a class="back" href="franchise_list.php">⬅ Back to Franchise List</a>
 
 <table>
   <tr>
+    <th>Reg ID</th>
     <th>Name</th>
+    <th>Course</th>
     <th>Mobile</th>
-    <th>Email</th>
-    <th>City</th>
-    <th>District</th>
-    <th>State</th>
-    <th>Space</th>
-    <th>Investment</th>
-    <th>Message</th>
+    <th>Status</th>
     <th>Date</th>
   </tr>
 
   <?php
-  $res = $conn->query("SELECT * FROM franchise ORDER BY id DESC");
+  $res = $conn->query("SELECT * FROM students WHERE franchise_id='$fid' ORDER BY id DESC");
   while($row = $res->fetch_assoc()){
     echo "<tr>
+      <td>".$row['reg_id']."</td>
       <td>".$row['name']."</td>
+      <td>".$row['course']."</td>
       <td>".$row['mobile']."</td>
-      <td>".$row['email']."</td>
-      <td>".$row['city']."</td>
-      <td>".$row['district']."</td>
-      <td>".$row['state']."</td>
-      <td>".$row['space']."</td>
-      <td>".$row['investment']."</td>
-      <td>".$row['message']."</td>
+      <td>".$row['admission_status']."</td>
       <td>".$row['created_at']."</td>
     </tr>";
   }

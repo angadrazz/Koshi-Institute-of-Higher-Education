@@ -2,8 +2,8 @@
 $reg = $_GET['reg'] ?? "KOSHI20260000";
 $upi = "koshiinstitute@paytm";
 $amount = "500";
-$note = "Admission Fee - ".$reg;
 
+$note = "Admission Fee - ".$reg;
 $upi_link = "upi://pay?pa=$upi&pn=Koshi%20Institute&am=$amount&cu=INR&tn=".urlencode($note);
 ?>
 
@@ -29,8 +29,8 @@ $upi_link = "upi://pay?pa=$upi&pn=Koshi%20Institute&am=$amount&cu=INR&tn=".urlen
 
   <a class="paybtn" href="<?php echo $upi_link; ?>">Pay Now via PhonePe / GPay / Paytm</a>
 
-  <p style="margin-top:15px;color:gray;">
-    After payment, enter Transaction ID in registration form.
+  <p style="margin-top:15px;color:gray;font-weight:bold;">
+    After payment, fill Txn ID in Registration Form.
   </p>
 </div>
 

@@ -91,31 +91,6 @@
       border:1px solid rgba(11,92,255,.12);
     }
 
-    /* Notification Bar */
-.notice-bar{
-  position:fixed;
-  top:70px;
-  width:100%;
-  background:linear-gradient(90deg,#0b5cff,#00aaff);
-  color:#fff;
-  overflow:hidden;
-  z-index:998;
-  border-bottom:1px solid rgba(0,0,0,0.1);
-}
-
-.notice-track{
-  display:inline-block;
-  white-space:nowrap;
-  padding:10px 0;
-  font-weight:900;
-  animation:scrollText 18s linear infinite;
-}
-
-@keyframes scrollText{
-  0%{ transform:translateX(100%); }
-  100%{ transform:translateX(-100%); }
-}
-
     /* Hero */
     header{
       min-height:100vh;
@@ -239,7 +214,6 @@
     }
     iframe.show{opacity:1;transform:translateY(0);}
 
-
     /* Footer */
     footer{
       padding:45px 8%;
@@ -316,21 +290,15 @@
       <li><a href="#courses">Courses</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#franchise">Franchise</a></li>
+
       <li><a href="#map">Map</a></li>
       <li><a href="verify.php">Verify</a></li>
-      <li><a href="#franchise">Franchise</a></li>
     </ul>
 
     <div class="menu-btn" id="menuBtn">☰</div>
     <button class="btn primary" id="openPopup">Admission Open</button>
   </nav>
-
-  <!-- NOTIFICATION BAR -->
-<div class="notice-bar">
-  <div class="notice-track">
-    🎓 Admission Open 2025–26 | 📢 B.Ed / D.El.Ed Admission Started | 💻 Online Registration Available | 📞 Helpline: 9431496862 | “🎓 Quality Education | 💻 Skill Development | 🚀 Career Guidance – Build Your Future with Koshi Institute”
-  </div>
-</div>
 
   <!-- MOBILE MENU -->
   <div class="mobile" id="mobileMenu">
@@ -341,7 +309,6 @@
     <a href="#map">Map</a>
     <a href="register.php">Registration</a>
     <a href="verify.php">Verification</a>
-    <a href="#franchise">Franchise</a>
     <a href="admin/login.php">Admin Panel</a>
   </div>
 
@@ -462,8 +429,7 @@
     </div>
   </section>
 
-  <!-- FRANCHISE -->
-   <section id="franchise">
+  <section id="franchise">
   <h2 class="title">Franchise Opportunity</h2>
   <p class="sub">
     Start your own Education & Admission Consultancy Center with Koshi Institute of Higher Education.
@@ -568,14 +534,7 @@
   <!-- FOOTER -->
   <footer>
     <h2>Koshi Institute of Higher Education</h2>
-    <p>Koshi Institute of Higher Education
-A Unit of Koshi Shiksha Private Limited
-
-Providing Admission Guidance | Documentation Support | Career Counselling | Online Verification System
-<br>
-✔ ISO 9001:2015 Certified Organization <br>
-✔ Registered under Companies Act, 2013 (MCA, Govt. of India) <br>
-✔ MSME Registered (Govt. of India)</p>
+    <p>A Unit of Koshi Shiksha Private Limited</p>
     <p>Helpline: <a href="tel:9431496862">9431496862</a> | <a href="tel:9122552662">9122552662</a></p>
     <p>© 2025–26 | koshiinstitute.org</p>
   </footer>

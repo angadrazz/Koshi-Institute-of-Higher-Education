@@ -328,7 +328,7 @@
   <!-- NOTIFICATION BAR -->
 <div class="notice-bar">
   <div class="notice-track">
-    🎓 Admission Open 2025–26 | 📢 B.Ed / D.El.Ed Admission Started | 💻 Online Registration Available | 📞 Helpline: 9431496862 | Koshi Institute of Higher Education is dedicated to providing quality education, skill development, and career guidance to students across all levels. Our mission goes beyond simply securing admissions—we focus on empowering students with the right guidance to build successful careers. We combine experienced counselling with transparent processes to help every student find their ideal educational path.
+    🎓 Admission Open 2025–26 | 📢 B.Ed / D.El.Ed Admission Started | 💻 Online Registration Available | 📞 Helpline: 9431496862 | “🎓 Quality Education | 💻 Skill Development | 🚀 Career Guidance – Build Your Future with Koshi Institute”
   </div>
 </div>
 

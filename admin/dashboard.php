@@ -31,6 +31,8 @@ if(!isset($_SESSION['admin'])){
 </h2>
 
 <a class="excel" href="export_excel.php">Export Excel Report</a>
+<a class="excel" href="franchise_list.php" style="background:green;">View Franchise Requests</a>
+
 
 <table>
   <tr>
